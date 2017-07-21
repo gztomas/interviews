@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filter</title>
+</head>
+<body>
+<label for="fruits-filter">Search</label><input id="fruits-filter"/>
+<ul id="fruits-list">
+  <li>Apple</li>
+  <li>Banana</li>
+  <li>Cherry</li>
+  <li>Fig</li>
+  <li>Guava</li>
+  <li>Kiwi</li>
+  <li>Lemon</li>
+  <li>Orange</li>
+  <li>Pineapple</li>
+</ul>
+<script type="text/javascript">
+  let input = document.getElementById('fruits-filter');
+  let items = document.getElementsByTagName('li');
+  input.addEventListener('input', function() {
+    console.log(input.value);
+    for (let i = 0; i < items.length; i++) {
+      items[i].style.display =
+        items[i].innerText.match(new RegExp(input.value.trim(), 'i')) ? null : 'none';
+    }
+  });
+</script>
+</body>
+</html>

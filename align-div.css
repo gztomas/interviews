@@ -1,0 +1,17 @@
+div.hcenter {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: -50%;
+  left: -50%
+}
+
+div.vcenter {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  position: absolute;
+  top: -50%;
+  left: -50%
+}
