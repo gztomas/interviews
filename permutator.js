@@ -19,6 +19,6 @@ function permutator(inputArr) {
   return permute(inputArr);
 }
 
-let permutations = permutator(['a', 'b', 'c', 'd']);
+let permutations = permutator(["a", "b", "c", "d"]);
 
 console.log(permutations, permutations.length);

@@ -15,7 +15,6 @@ function merge(left, right) {
 }
 
 function mergeSort(items) {
-
   // Terminal case: 0 or 1 item arrays don't need sorting
   if (items.length < 2) {
     return items;
@@ -29,7 +28,6 @@ function mergeSort(items) {
 }
 
 function mergeSortInPlace(items) {
-
   if (items.length < 2) {
     return items;
   }

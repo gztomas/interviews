@@ -1,5 +1,5 @@
 function reverseWords(sentence) {
-  return sentence.split(' ').reverse().join(' ');
+  return sentence.split(" ").reverse().join(" ");
 }
 
 function reverseArray(arr, from = 0, to = arr.length) {
@@ -12,17 +12,17 @@ function reverseArray(arr, from = 0, to = arr.length) {
 }
 
 function reverseWordsHard(sentence) {
-  let arr = sentence.split('');
+  let arr = sentence.split("");
   reverseArray(arr);
   let start = 0;
   for (let i = 0; i < arr.length; i++) {
     let char = arr[i];
-    if(char === ' ') {
+    if (char === " ") {
       reverseArray(arr, start, i);
       start = i + 1;
     }
   }
-  return arr.join('');
+  return arr.join("");
 }
 
-console.log(reverseWordsHard('Hola como te va'));
+console.log(reverseWordsHard("How are you doing"));

@@ -22,6 +22,4 @@ function isSubstringManual(str, sub) {
   return false;
 }
 
-console.log(isSubstringNative('esto que quedaes', 'que') === true);
-console.log(isSubstringManual('esto que quedaes', 'que') === true);
-console.log(isSubstring('esto que quedaes', 'que') === true);
+console.log(isSubstringNative('wait for it', 'for') === true);
